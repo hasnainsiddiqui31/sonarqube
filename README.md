@@ -39,6 +39,7 @@ vim conf/sonar.properties
 useradd sonar -m
 chown sonar:sonar -R /opt/sonar
 usermod -s /bin/bash sonar
+passwd sonar
 su sonar
 cd /opt/sonar/bin/linux-x86-64
 ./sonar.sh start
